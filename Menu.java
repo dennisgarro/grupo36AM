@@ -16,12 +16,12 @@ public class Menu {
                 System.out.println("ingrese la dimension de la matriz");
                 while (!sc.hasNextInt()) {
                     System.out.println("la dimension de la matriz debe ser numerica");
-                    sc.next();
+                    d = sc.nextInt();
                 }
                 d = sc.nextInt();
                 switch (opt) {
                     case 1:
-                       
+
                         break;
                     case 2:
                         break;
@@ -30,9 +30,15 @@ public class Menu {
                     case 4:
                         break;
                     case 5:
-                        
+
                         break;
                     case 6:
+                        //Punto 6 Realizado por Cristian Camilo Gonzalez Carmona
+                        Metodos me = new Metodos();
+                        Objetos[][] matriz = me.LlenarMatrizObjetos(d);
+                        // me.MostrarMatrizObjetos(matriz);
+                        Objetos[][] matrizDisponibles = me.ProductosDisponibles(matriz);
+                        me.MostrarMatrizObjetos(matrizDisponibles);
                         break;
                     case 7:
                         break;
