@@ -21,7 +21,10 @@ public class Menu {
                 d = sc.nextInt();
                 switch (opt) {
                     case 1:
-                       
+                       Punto1 punto1 = new Punto1();
+                       ProductoPunto1 pp1 = new ProductoPunto1();
+                       ProductoPunto1[][] productos =  pp1.LlenarMatrizProducto(d);
+                       punto1.PrecioMasElevado(productos);
                         break;
                     case 2:
                         break;
