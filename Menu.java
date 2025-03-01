@@ -37,7 +37,7 @@ public class Menu {
 
                         break;
                     case 6:
-                        //Punto 6 Realizado por Cristian Camilo Gonzalez Carmona
+                        // Punto 6 Realizado por Cristian Camilo Gonzalez Carmona
                         Metodos me = new Metodos();
                         Objetos[][] matriz = me.LlenarMatrizObjetos(d);
                         // me.MostrarMatrizObjetos(matriz);
@@ -47,6 +47,8 @@ public class Menu {
                     case 7:
                         break;
                     case 8:
+                        Punto8 p8 = new Punto8();
+                        p8.punto8();
                         break;
                     case 9:
                         break;
